@@ -3,15 +3,15 @@ from algosdk import account, algod, mnemonic, transaction
 
 # Shown for demonstration purposes. NEVER reveal secret mnemonics in practice.
 # Change these values with the mnemonics from Step 1A
-# mnemonic1 = "PASTE your phrase for account 1 from Step 1A"
-# mnemonic2 = "PASTE your phrase for account 2 from Step 1A"
-# mnemonic3 = "PASTE your phrase for account 3 from Step 1A"
+mnemonic1 = "PASTE your phrase for account 1 from Step 1A"
+mnemonic2 = "PASTE your phrase for account 2 from Step 1A"
+mnemonic3 = "PASTE your phrase for account 3 from Step 1A"
 
 
 
-mnemonic1 = "portion never forward pill lunch organ biology weird catch curve isolate plug innocent skin grunt bounce clown mercy hole eagle soul chunk type absorb trim"
-mnemonic2 = "place blouse sad pigeon wing warrior wild script problem team blouse camp soldier breeze twist mother vanish public glass code arrow execute convince ability there"
-mnemonic3 = "image travel claw climb bottom spot path roast century also task cherry address curious save item clean theme amateur loyal apart hybrid steak about blanket"
+# mnemonic1 = "portion never forward pill lunch organ biology weird catch curve isolate plug innocent skin grunt bounce clown mercy hole eagle soul chunk type absorb trim"
+# mnemonic2 = "place blouse sad pigeon wing warrior wild script problem team blouse camp soldier breeze twist mother vanish public glass code arrow execute convince ability there"
+# mnemonic3 = "image travel claw climb bottom spot path roast century also task cherry address curious save item clean theme amateur loyal apart hybrid steak about blanket"
 
 
 # For ease of reference, add account public and private keys to

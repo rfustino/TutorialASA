@@ -109,19 +109,19 @@ public class TutorialASA {
         // Shown for demonstration purposes. NEVER reveal secret mnemonics in practice.
         // These three accounts are for testing purposes
         // Paste in phrase from Step 1A
-        // final String account1_mnemonic = "PASTE your phrase for account 1 from Step 1A";
-        // final String account2_mnemonic = "PASTE your phrase for account 2 from Step 1A";
-        // final String account3_mnemonic = "PASTE your phrase for account 3 from Step 1A";
+        final String account1_mnemonic = "PASTE your phrase for account 1 from Step 1A";
+        final String account2_mnemonic = "PASTE your phrase for account 2 from Step 1A";
+        final String account3_mnemonic = "PASTE your phrase for account 3 from Step 1A";
 
-        final String account1_mnemonic = "portion never forward pill lunch organ biology"
-                + " weird catch curve isolate plug innocent skin grunt"
-                + " bounce clown mercy hole eagle soul chunk type absorb trim";
-        final String account2_mnemonic = "place blouse sad pigeon wing warrior wild script"
-                + " problem team blouse camp soldier breeze twist mother"
-                + " vanish public glass code arrow execute convince ability" + " there";
-        final String account3_mnemonic = "image travel claw climb bottom spot path roast "
-                + "century also task cherry address curious save item "
-                + "clean theme amateur loyal apart hybrid steak about blanket";
+        // final String account1_mnemonic = "portion never forward pill lunch organ biology"
+        //         + " weird catch curve isolate plug innocent skin grunt"
+        //         + " bounce clown mercy hole eagle soul chunk type absorb trim";
+        // final String account2_mnemonic = "place blouse sad pigeon wing warrior wild script"
+        //         + " problem team blouse camp soldier breeze twist mother"
+        //         + " vanish public glass code arrow execute convince ability" + " there";
+        // final String account3_mnemonic = "image travel claw climb bottom spot path roast "
+        //         + "century also task cherry address curious save item "
+        //         + "clean theme amateur loyal apart hybrid steak about blanket";
 
         final Account acct1 = new Account(account1_mnemonic);
         final Account acct2 = new Account(account2_mnemonic);

@@ -1,7 +1,6 @@
 package main
 
 import (
-	json "encoding/json"
 	"fmt"
 
 	"github.com/algorand/go-algorand-sdk/crypto"
@@ -28,13 +27,13 @@ func main() {
 	if err != nil {
 		return
 	}
-	fmt.Printf("Account 1 = %s\n", address1)
-	fmt.Printf("Account 2 = %s\n", address2)
-	fmt.Printf("Account 3 = %s\n", address3)
+	fmt.Printf("1 : \"%s\"\n", address1)
+	fmt.Printf("2 : \"%s\"\n", address2)
+	fmt.Printf("3 : \"%s\"\n", address3)
 	fmt.Printf("")
-	fmt.Printf("Copy off accounts above and add TestNet Algo funds using the TestNet Dispenser at https://bank.testnet.algorand.network/\n")	
+	fmt.Printf("Copy off accounts above and add TestNet Algo funds using the TestNet Dispenser at https://bank.testnet.algorand.network/\n")
 	fmt.Printf("Copy off the following mnemonic code for use in Step 1B\n")
-	fmt.Printf("\n")	
+	fmt.Printf("\n")
 	fmt.Printf("mnemonic1 := \"%s\"\n", mnemonic1)
 	fmt.Printf("mnemonic2 := \"%s\"\n", mnemonic2)
 	fmt.Printf("mnemonic3 := \"%s\"\n", mnemonic3)
@@ -42,12 +41,12 @@ func main() {
 
 // Terminal output should look similar to this...
 
-// Account 1 = BQBRKJ7KSQO6WWX3QRSITPCZOEDOT6DX6MJVQQFQI72PDPTKWU5WKOOJ2I
-// Account 2 = LBMZ2DNGB5N7AJNZQZPMTPDJRW3S6OB6YR4EHE5RYODRS67TILA5H23K4A
-// Account 3 = 6AVEBUP35AHIKDA6UGSFM6LP433AUHVRZNW4KHAXOYCOYDYOLFJWZ7J3I4
+// 1 : "RAWIR4W53EX37HGN2FKLFQK53FF3NM6ASREKABFK6UOWMS3JYSMEVOMOVM"
+// 2 : "RPL3RD7JFH73ZXMK6B42UPBU2F77VYS5ROQBCL7YYXBY5SZKG72OL5WVCY"
+// 3 : "J6FRXRPBSUIDEICILWW53ZSATASGRHUCWDIVEN3MGPU7KUKEGJNQ4MRNMM"
 // Copy off accounts above and add TestNet Algo funds using the TestNet Dispenser at https://bank.testnet.algorand.network/
 // Copy off the following mnemonic code for use in Step 1B
 
-// mnemonic1 := "fatigue laundry small early radar code supreme diary skin record slice distance bike skirt guard surround miss turtle horror frame train taxi column ability forest"
-// mnemonic2 := "ill live coconut risk east flower snack develop boring enroll nest rice mistake pioneer rival account coffee depend bachelor orient rebel inform throw absent option"
-// mnemonic3 := "broom bid found recall stick gas sample copy network mistake mind relief rely file disorder east asthma program filter hedgehog legal walnut wait about slogan"
+// mnemonic1 := "donkey remember meadow box unfold firm relief wonder that shoe tonight alcohol visit where kingdom captain fitness plate lend leopard wear avocado science absent park"
+// mnemonic2 := "trial stem exclude else turn ankle egg dish mountain major link confirm inherit crouch conduct below faint valid journey boat route pizza recycle above leopard"
+// mnemonic3 := "relief enough stadium diagram rubber please summer local math flush adapt belt void bitter roast amazing dove life wish obtain toward merry unlock able help"

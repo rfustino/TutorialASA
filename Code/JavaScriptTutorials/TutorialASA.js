@@ -45,20 +45,20 @@ var waitForConfirmation = async function (algodclient, txId) {
 // Recover accounts created in Step 1A
 // paste in mnemonic phrases here for each account
 
-// var account1_mnemonic = "PASTE your phrase for account 1 from Step 1A";
-// var account2_mnemonic = "PASTE your phrase for account 2 from Step 1A";
-// var account3_mnemonic = "PASTE your phrase for account 3 from Step 1A"
+var account1_mnemonic = "PASTE your phrase for account 1 from Step 1A";
+var account2_mnemonic = "PASTE your phrase for account 2 from Step 1A";
+var account3_mnemonic = "PASTE your phrase for account 3 from Step 1A"
 
-var account1_mnemonic = "portion never forward pill lunch organ biology" +
-    " weird catch curve isolate plug innocent skin grunt" +
-    " bounce clown mercy hole eagle soul chunk type absorb trim";
-var account2_mnemonic = "place blouse sad pigeon wing warrior wild script" +
-    " problem team blouse camp soldier breeze twist mother" +
-    " vanish public glass code arrow execute convince ability" +
-    " there";
-var account3_mnemonic = "image travel claw climb bottom spot path roast" +
-    " century also task cherry address curious save item" +
-    " clean theme amateur loyal apart hybrid steak about blanket"
+// var account1_mnemonic = "portion never forward pill lunch organ biology" +
+//     " weird catch curve isolate plug innocent skin grunt" +
+//     " bounce clown mercy hole eagle soul chunk type absorb trim";
+// var account2_mnemonic = "place blouse sad pigeon wing warrior wild script" +
+//     " problem team blouse camp soldier breeze twist mother" +
+//     " vanish public glass code arrow execute convince ability" +
+//     " there";
+// var account3_mnemonic = "image travel claw climb bottom spot path roast" +
+//     " century also task cherry address curious save item" +
+//     " clean theme amateur loyal apart hybrid steak about blanket"
 
 
 var recoveredAccount1 = algosdk.mnemonicToSecretKey(account1_mnemonic);
