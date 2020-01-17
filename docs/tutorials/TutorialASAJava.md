@@ -36,7 +36,7 @@ Assets are created at the account level. Each account can have up to 1000 assets
 
 In order to run ASA transactions, or any transactions for that matter, the accounts need to have TestNet Algo funds. Load all 3 accounts from the Algorand TestNet Dispenser which is located here: <https://bank.testnet.algorand.network/>
 
-**Info:**
+**Note:**
     See the appropriate GitHub repository for installing the supported SDKs:
 
 [JavaScript](https://github.com/algorand/js-algorand-sdk)
@@ -55,7 +55,7 @@ Community SDKs
 
 
 
-**Info:**
+**Note:**
     If you do not have a node setup, see these [instructions](https://developer.algorand.org/docs/introduction-installing-node). Also, another alternative is to use [PureStake](https://www.purestake.com/algorand-api).
 
 

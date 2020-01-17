@@ -36,7 +36,7 @@ Assets are created at the account level. Each account can have up to 1000 assets
 
 In order to run ASA transactions, or any transactions for that matter, the accounts need to have TestNet Algo funds. Load all 3 accounts from the Algorand TestNet Dispenser which is located here: <https://bank.testnet.algorand.network/>
 
-**Info:**
+**Note:**
     See the appropriate GitHub repository for installing the supported SDKs:
 
 [JavaScript](https://github.com/algorand/js-algorand-sdk)
@@ -55,7 +55,7 @@ Community SDKs
 
 
 
-**Info:**
+**Note:**
     If you do not have a node setup, see these [instructions](https://developer.algorand.org/docs/introduction-installing-node). Also, another alternative is to use [PureStake](https://www.purestake.com/algorand-api).
 
 
@@ -145,168 +145,6 @@ console.log("var account3_mnemonic = \"" + account3_mnemonic + "\"");
 // var account1_mnemonic = "hidden glove heart now claw away business behind echo best select merry secret upset shed margin outer reflect holiday rib among script scorpion above oval"
 // var account2_mnemonic = "plug cabin shuffle hope similar exact enable speed amateur shift ramp machine scrap comfort shove carry test marble hip protect melody win wink ability hybrid"
 // var account3_mnemonic = "divert feel ball make absorb deny student turn fuel north slice wolf small tribe pull work scout empty nose riot zoo prepare loan absent kingdom"
-```
-
-```python tab="Python"
-#python
-import json
-from algosdk import account, mnemonic
-
-acct = account.generate_account()
-address1 = acct[1]
-print("Account 1")
-print(address1)
-mnemonic1 = mnemonic.from_private_key(acct[0])
-print("Account 2")
-acct = account.generate_account()
-address2 = acct[1]
-print(address2)
-mnemonic2 = mnemonic.from_private_key(acct[0])
-print("Account 3")
-acct = account.generate_account()
-address3 = acct[1]
-print(address3)
-mnemonic3 = mnemonic.from_private_key(acct[0])
-print ("")
-print("Copy off accounts above and add TestNet Algo funds using the TestNet Dispenser at https://bank.testnet.algorand.network/")
-print("copy off the following mnemonic code for use in Step 1B")
-print("")
-print("mnemonic1 = \"{}\"".format(mnemonic1))
-print("mnemonic2 = \"{}\"".format(mnemonic2))
-print("mnemonic3 = \"{}\"".format(mnemonic3))
-
-# terminal output should look similar to this
-# Account 1
-# KECA5Z2ZILJOH2ZG7OPKJ5KMFXP5XBAOC7H36TLPJOQI3KB5UIYUD5XTZU
-# Account 2
-# DWQ4IA7EK5BKHSPNCJBA5SOVU66TKGUCCGO2SHQCI5UB2JAO3G2GWXMGPA
-# Account 3
-# TABDMZ2EUTNOR3S74SJWW37DLHE7BDGS5XB5JPLFQ2VQVJOE2DXKX722VU
-
-# Copy off accounts above and add TestNet Algo funds using the TestNet Dispenser at https: // bank.testnet.algorand.network/
-# copy off the following mnemonic code for use in Step 1B
-
-# mnemonic1 = "consider round clerk soldier hurt dynamic floor video output spoon deliver virtual zoo inspire rubber doll nose warfare improve abstract recall choice size above actor"
-# mnemonic2 = "boil explain enlist adapt science hub universe knife ghost scheme lazy payment must gas coconut forget goddess author filter civil tumble antique delay absorb lend"
-# mnemonic3 = "place elbow thumb bid taste strong sting tube swarm comic wave dinosaur congress sword zebra need proud primary brief rotate story pilot garbage abstract black"
-```
-
-```java tab="Java"
-//Java
-package com.algorand.Tutorials;
-import com.algorand.algosdk.account.Account;
-import com.algorand.algosdk.crypto.Address;
-public class CreateNewAccounts {
-public static void main(final String args[]) throws Exception {
-// Create a random new account
-Account act1 = new Account();
-// Get the new account address
-Address addr1 = act1.getAddress();
-// Get the backup phrase
-String backup1 = act1.toMnemonic();
-System.out.println("Account Address 1: " + addr1.toString());
-// Create a random new account
-Account act2 = new Account();
-// Get the new account address
-Address addr2 = act2.getAddress();
-// Get the backup phrase
-String backup2 = act2.toMnemonic();
-System.out.println("Account Address 2: " + addr2.toString());
-// Create a random new account
-Account act3 = new Account();
-// Get the new account address
-Address addr3 = act3.getAddress();
-// Get the backup phrase
-String backup3 = act3.toMnemonic();
-System.out.println("Account Address 3: " + addr3.toString());
-System.out.println("");
-System.out.println(
-        "Copy off accounts above and add TestNet Algo funds using the TestNet Dispenser at https://bank.testnet.algorand.network/");
-System.out.println("");
-System.out.println("copy off the following code for use in Step 1B");
-System.out.println("");
-System.out.println("final String account1_mnemonic = \"" + backup1 + "\"");
-System.out.println("final String account2_mnemonic = \"" + backup2 + "\"");
-System.out.println("final String account3_mnemonic = \"" + backup3 + "\"");
-// Terminal output should look similar to this...
-
-// Account Address 1: PSF2S7OTAIP6YEQBOF4R7JOYDBZMTMAG7KCAUCQUM6UPCELHNRS5LQPS3M
-// Account Address 2: FIBG65O25CMDTEG5ARZBDWABUDO3Z6ZRVNTAJN4DCLYCI6Z4YZFSEWF55M
-// Account Address 3: AWICWFUDL5CO3XYSWGRMXLS7ML2RGOSCWQNXNSFVR2VOP73P6IMEZ7FUFY
-
-// Copy off accounts above and add TestNet Algo funds using the TestNet
-// Dispenser at https://bank.testnet.algorand.network/
-
-// copy off the following code for use in Step 1B
-
-// final String account1_mnemonic = "tongue mention field lottery diagram yellow
-// walk erupt supply link bike setup learn excite recycle lunar flag dash lucky
-// dad evoke refuse ticket able please"
-// final String account2_mnemonic = "over fantasy smile pupil visual film club
-// balcony jacket tilt amateur whip crisp allow clay govern canoe fat group
-// develop sorry test unknown absent dinner"
-// final String account3_mnemonic = "category sick rough intact design board
-// episode hedgehog build bundle siege voyage rent season fossil weird cannon
-// pipe grow winner wall urge report about weapon"
-}
-}
-```
-
-```go tab="Go"
-//Go
-package main
-
-import (
-	json "encoding/json"
-	"fmt"
-
-	"github.com/algorand/go-algorand-sdk/crypto"
-	"github.com/algorand/go-algorand-sdk/mnemonic"
-)
-
-func main() {
-	account1 := crypto.GenerateAccount()
-	account2 := crypto.GenerateAccount()
-	account3 := crypto.GenerateAccount()
-	address1 := account1.Address.String()
-	address2 := account2.Address.String()
-	address3 := account3.Address.String()
-
-	mnemonic1, err := mnemonic.FromPrivateKey(account1.PrivateKey)
-	if err != nil {
-		return
-	}
-	mnemonic2, err := mnemonic.FromPrivateKey(account2.PrivateKey)
-	if err != nil {
-		return
-	}
-	mnemonic3, err := mnemonic.FromPrivateKey(account3.PrivateKey)
-	if err != nil {
-		return
-	}
-	fmt.Printf("Account 1 = %s\n", address1)
-	fmt.Printf("Account 2 = %s\n", address2)
-	fmt.Printf("Account 3 = %s\n", address3)
-	fmt.Printf("")
-	fmt.Printf("Copy off accounts above and add TestNet Algo funds using the TestNet Dispenser at https://bank.testnet.algorand.network/\n")	
-	fmt.Printf("Copy off the following mnemonic code for use in Step 1B\n")
-	fmt.Printf("\n")	
-	fmt.Printf("mnemonic1 := \"%s\"\n", mnemonic1)
-	fmt.Printf("mnemonic2 := \"%s\"\n", mnemonic2)
-	fmt.Printf("mnemonic3 := \"%s\"\n", mnemonic3)
-}
-
-// Terminal output should look similar to this...
-
-// Account 1 = BQBRKJ7KSQO6WWX3QRSITPCZOEDOT6DX6MJVQQFQI72PDPTKWU5WKOOJ2I
-// Account 2 = LBMZ2DNGB5N7AJNZQZPMTPDJRW3S6OB6YR4EHE5RYODRS67TILA5H23K4A
-// Account 3 = 6AVEBUP35AHIKDA6UGSFM6LP433AUHVRZNW4KHAXOYCOYDYOLFJWZ7J3I4
-// Copy off accounts above and add TestNet Algo funds using the TestNet Dispenser at https://bank.testnet.algorand.network/
-// Copy off the following mnemonic code for use in Step 1B
-
-// mnemonic1 := "fatigue laundry small early radar code supreme diary skin record slice distance bike skirt guard surround miss turtle horror frame train taxi column ability forest"
-// mnemonic2 := "ill live coconut risk east flower snack develop boring enroll nest rice mistake pioneer rival account coffee depend bachelor orient rebel inform throw absent option"
-// mnemonic3 := "broom bid found recall stick gas sample copy network mistake mind relief rely file disorder east asthma program filter hedgehog legal walnut wait about slogan"
 ```
 
 
