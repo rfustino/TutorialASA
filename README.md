@@ -1,1 +1,2 @@
-Algorand ASA Tutorial
+Algorand Standard Assets Tutorial
+(beta version)

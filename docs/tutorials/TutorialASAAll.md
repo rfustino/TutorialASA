@@ -36,19 +36,26 @@ Assets are created at the account level. Each account can have up to 1000 assets
 
 In order to run ASA transactions, or any transactions for that matter, the accounts need to have TestNet Algo funds. Load all 3 accounts from the Algorand TestNet Dispenser which is located here: <https://bank.testnet.algorand.network/>
 
-!!! info
-    See the appropriate GitHub repository for installing the SDKs:
+**Info:**
+    See the appropriate GitHub repository for installing the supported SDKs:
 
-    [JavaScript](https://github.com/algorand/js-algorand-sdk)
+[JavaScript](https://github.com/algorand/js-algorand-sdk)
 
-    [Python](https://github.com/algorand/py-algorand-sdk)
+[Python](https://github.com/algorand/py-algorand-sdk)
 
-    [Java](https://github.com/algorand/java-algorand-sdk)
+[Java](https://github.com/algorand/java-algorand-sdk)
 
-    [Go Lang](https://github.com/algorand/go-algorand-sdk)
+[Go Lang](https://github.com/algorand/go-algorand-sdk)
+
+Community SDKs 
+
+[.NET / C#](https://github.com/RileyGe/dotnet-algorand-sdk) All Algorand 2.0 functions, including ASA, are available and demonstrated in the sample code github repository (just not in this tutorial yet)
+
+[Rust (no Algorand 2.0 functions at this time)](http://mraof.com/temp/algosdk-doc/algosdk/)
 
 
-!!! info
+
+**Info:**
     If you do not have a node setup, see these [instructions](https://developer.algorand.org/docs/introduction-installing-node). Also, another alternative is to use [PureStake](https://www.purestake.com/algorand-api).
 
 
@@ -322,7 +329,7 @@ Account 2
 Account 3
 `3ZQ3SHCYIKSGK7MTZ7PE7S6EDOFWLKDQ6RYYVMT7OHNQ4UJ774LE52AQCU`
 
-!!! info
+**Info:**
     You may want to verify account information periodically as well as transactions
     with asset information during the course of this tutorial. You can use either
     the [Algo TestNet Explorer](https://testnet.algoexplorer.io/) or use the Purestake's [Goalseeker](https://goalseeker.purestake.io/algorand/testnet), which also
@@ -730,13 +737,12 @@ Step 2 Create a New Asset
 The ability to create asserts directly on the blockcahin is an exciting capability of the Algorand Blockchain. Possible uses include currency, game leader boards, points in a loyalty system, shares of an asset, and securities such as stocks, bonds, and derivaties.  
 
 
-!!!info 
+**Info:**
     The decimals value determines the placement of the decimal. For example, when `decimals = 2`, and the `amount = 1000`, the acatual amount is 10.00. So, when a  transfer of amount of 10 is made, the actual transfer is .10
 
 
-!!! note
-	With the **Go** code solution, paste this snippet before the final curly brace `}` and uncommnet the import libraries at the top as needed.
-    
+**Note:**
+	With the **Go** code solution, paste this snippet before the final curly brace `}` and uncommnet the import libraries at the top as needed. 
     With the **Java** code solution, paste this snippet at the end of the `main` function, before the final two curly braces `}}`
 
 **Task 2-1** Account 1 creates an asset called latinum and sets Account 2 as the manager, reserve, freeze, and clawback address.
@@ -1080,7 +1086,7 @@ Asset reconfiguration allows the address specified as manager to change any of t
 
 **Task 3-1** Here, the current manager (Account 2) issues an asset configuration transaction that assigns Account 1 as the new manager.
 
-!!! note
+**Note:**
     With the JavaScript code solution, you will need to paste snippets above this catch statement.
 
 ```javascript
@@ -1532,7 +1538,7 @@ Step 5 Transfer an Asset
 
 Transfer an asset allows users to transact with assets, after they have issued asset acceptance transactions. The optional closeRemainderTo argument can be used to stop transacting with a particular asset. Now that the opt-in has been done on a potential receiving accout, assets can be transferred.
 
-!!!note
+**Note:**
     A frozen account can always close out to the asset creator.
 
 **Task 5-1** This code has Account 1 sending 10 latinum to Account 3.
@@ -2318,4 +2324,4 @@ ASA is a very powerful layer 1 feature of the Algorand Blockchain. We created an
 * Revoke
 * Destroy
 
-Source code for the completed solution can be found here<LINK>.
+Source code for the completed solution can be found here <https://github.com/rfustino/TutorialASA>.
