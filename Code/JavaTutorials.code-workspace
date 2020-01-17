@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "JavaTutorials"
+		}
+	],
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "automatic"
+	}
+}
