@@ -126,6 +126,7 @@ public class TutorialASA {
         final Account acct1 = new Account(account1_mnemonic);
         final Account acct2 = new Account(account2_mnemonic);
         final Account acct3 = new Account(account3_mnemonic);
+        
         // get last round and suggested tx fee
         // We use these to get the latest round and tx fees
         // These parameters will be required before every

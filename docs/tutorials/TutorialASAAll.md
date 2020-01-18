@@ -1536,7 +1536,7 @@ if not holding:
 Step 5 Transfer an Asset
 ------------------------
 
-Transfer an asset allows users to transact with assets, after they have issued asset acceptance transactions. The optional closeRemainderTo argument can be used to stop transacting with a particular asset. Now that the opt-in has been done on a potential receiving accout, assets can be transferred.
+Transfer an asset allows users to transact with assets, after they have issued asset acceptance transactions. The optional closeRemainderTo argument can be used to stop transacting with a particular asset. Now that the opt-in has been done on a potential receiving account, assets can be transferred.
 
 **Note:**
     A frozen account can always close out to the asset creator.

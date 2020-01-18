@@ -508,8 +508,7 @@ Before a user can begin transacting with an asset, the user must first issue an 
         // receive the new asset
         // First we update standard Transaction parameters
         // To account for changes in the state of the blockchain
-        // com.algorand.algosdk.algod.client.model.Account act = new
-        // com.algorand.algosdk.algod.client.model.Account();
+
         try {
             cp = getChangingParms(algodApiInstance);
         } catch (final ApiException e) {
@@ -558,7 +557,7 @@ Before a user can begin transacting with an asset, the user must first issue an 
 Step 5 Transfer an Asset
 ------------------------
 
-Transfer an asset allows users to transact with assets, after they have issued asset acceptance transactions. The optional closeRemainderTo argument can be used to stop transacting with a particular asset. Now that the opt-in has been done on a potential receiving accout, assets can be transferred.
+Transfer an asset allows users to transact with assets, after they have issued asset acceptance transactions. The optional closeRemainderTo argument can be used to stop transacting with a particular asset. Now that the opt-in has been done on a potential receiving account, assets can be transferred.
 
 **Note:**
     A frozen account can always close out to the asset creator.
